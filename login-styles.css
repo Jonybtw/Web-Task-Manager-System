@@ -1,0 +1,101 @@
+/* Reset de estilos para garantir uma base consistente em todos os navegadores */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Centraliza o conteúdo dentro do formulário */
+    display: flex;
+    flex-direction: column; /* Adiciona esta linha para alinhar verticalmente */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 16px; /* Adiciona espaço abaixo do h2 */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px; /* Adiciona espaço abaixo do parágrafo */
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
